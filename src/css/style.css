@@ -1,36 +1,199 @@
+p {
+  color: purple !important; }
+
+.grid {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 auto 30px;
+  max-width: 935px;
+  width: 100%;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 60px 20px 0;
+  width: calc(100% - 40px); }
+  @media screen and (min-width: 600px) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; } }
+  .grid__item {
+    position: relative;
+    overflow: hidden;
+    margin: 1rem; }
+    @media screen and (min-width: 600px) {
+      .grid__item {
+        width: 50%; } }
+    @media screen and (min-width: 1000px) {
+      .grid__item {
+        width: calc(100% / 3); } }
+    @media screen and (min-width: 600px) {
+      .grid__item {
+        width: calc(50% - 2rem); } }
+    @media screen and (min-width: 1000px) {
+      .grid__item {
+        width: calc(33.3333% - 2rem); } }
+    .grid__item img {
+      display: block; }
+  .grid--projects figure:hover figcaption {
+    background: rgba(0, 0, 0, 0.25); }
+  .grid--projects figure:hover img {
+    -webkit-transform: scale3d(1.2, 1.2, 1);
+    transform: scale3d(1.2, 1.2, 1); }
+  .grid--projects figure img {
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  .grid--projects figure figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: table; }
+    .grid--projects figure figcaption:hover div {
+      opacity: 1;
+      top: 0;
+      -webkit-transition: all 0.8s ease-in-out;
+      transition: all 0.8s ease-in-out; }
+    .grid--projects figure figcaption:hover div:after {
+      width: 50%; }
+    .grid--projects figure figcaption div {
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      top: 20px;
+      opacity: 0;
+      color: #2c3e50;
+      text-transform: uppercase; }
+      .grid--projects figure figcaption div:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 40%;
+        text-align: center;
+        margin: auto;
+        width: 0%;
+        height: 2px;
+        background: #2c3e50; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 body {
   background: #fff;
   color: #1c1b20; }
 
-.container {
+.main-content {
   margin: auto;
   max-width: 1200px; }
 
 .responsive-image {
   max-width: 100%; }
-
-.cell img {
-  display: block; }
-
-@media screen and (min-width: 600px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; }
-  .cell {
-    width: 50%; } }
-
-@media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(100% / 3); } }
-
-.cell {
-  margin: 1rem; }
-
-@media screen and (min-width: 600px) {
-  .cell {
-    width: calc(50% - 2rem); } }
-
-@media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(33.3333% - 2rem); } }

@@ -1,13 +1,18 @@
-@import "variables";
-@import "project-grid";
 @import "reset";
+@import "variables";
+@import "fonts";
+@import "project-grid";
 
 $bg-color: #fff;
 $color: #1c1b20;
 
 body {
-    background: $bg-color;
-    color:$color;
+  background: $bg-color;
+  color:$color;
+  font-family: "akzidenz-grotesk-regular",sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: .1em;
 }
 
 .main-content {

@@ -1,6 +1,4 @@
-# Sass Starter Pack
-
-A light package for compiling Sass and running a dev server
+# My Portfolio Site
 
 ### Version
 1.0.0

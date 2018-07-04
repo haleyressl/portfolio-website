@@ -83,6 +83,12 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+*, :after, :before {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,

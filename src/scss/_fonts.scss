@@ -1,0 +1,24 @@
+// Define your fonts here. Make sure font families are linked.
+
+$helvetica : Helvetica, Arial, sans-serif;
+
+// Use these more generic aliases in case the font gets changed.
+$body: $helvetica;
+$display: $helvetica;
+
+// Generated Fonts
+@font-face {
+  font-family: 'akzidenz-grotesk-reg';
+  src: url('../fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff2') format('woff2'),
+       url('../fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'akzidenz-grotesk-light';
+  src: url('../fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff2') format('woff2'),
+    url('../fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}

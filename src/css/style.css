@@ -109,13 +109,13 @@ table {
 
 @font-face {
   font-family: 'akzidenz-grotesk-reg';
-  src: url("../fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff2") format("woff2"), url("../fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff") format("woff");
+  src: url("../src/assets/fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff2") format("woff2"), url("../src/assets/fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'akzidenz-grotesk-light';
-  src: url("../fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff2") format("woff2"), url("../fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff") format("woff");
+  src: url("../src/assets/fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff2") format("woff2"), url("../src/assets/fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
@@ -205,10 +205,52 @@ table {
 body {
   background: #fff;
   color: #1c1b20;
-  font-family: "akzidenz-grotesk-regular",sans-serif;
+  font-family: "akzidenz-grotesk-reg",sans-serif;
   font-size: 12px;
   line-height: 1.8;
-  letter-spacing: .1em; }
+  letter-spacing: .1em;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.bg-global {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 0;
+  pointer-events: none; }
+  .bg-global__line {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 16.666%;
+    width: 1px;
+    background: #000;
+    opacity: 0.075;
+    transition: 0.3s 0.5s; }
+    .bg-global__line:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -16.6666vw;
+      width: 0;
+      background: #000;
+      height: 100%;
+      transition: 0.5s cubic-bezier(0.81, 0.23, 0.05, 1); }
+    .bg-global__line:nth-of-type(2) {
+      left: 33.3333%; }
+    .bg-global__line:nth-of-type(3) {
+      left: 50%; }
+    .bg-global__line:nth-of-type(4) {
+      left: 66.666%; }
+    .bg-global__line:nth-of-type(5) {
+      left: 83.33%; }
+    .bg-global__line:nth-of-type(6) {
+      left: 100%; }
 
 .main-content {
   margin: auto;

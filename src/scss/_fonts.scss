@@ -22,3 +22,35 @@ $display: $helvetica;
   font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'knewave';
+  src: url('../src/assets/fonts/knewave/knewave-regular-webfont.woff2') format('woff2'),
+    url('../src/assets/fonts/knewave/knewave-regular-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'glacial_indifferencebold';
+  src: url('../src/assets/fonts/glacial-indifference/glacialindifference-bold-webfont.woff2') format('woff2'),
+    url('../src/assets/fonts/glacial-indifference/glacialindifference-bold-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'glacial_indifferenceregular';
+  src: url('../src/assets/fonts/glacial-indifference/glacialindifference-regular-webfont.woff2') format('woff2'),
+    url('../src/assets/fonts/glacial-indifference/glacialindifference-regular-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'glacial_indifferenceitalic';
+  src: url('../src/assets/fonts/glacial-indifference/glacialindifference-italic-webfont.woff2') format('woff2'),
+    url('../src/assets/fonts/glacial-indifference/glacialindifference-italic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}

@@ -1,0 +1,100 @@
+.hero {
+	$self: &;
+
+	&__wrapper {
+		max-width: 1120px;
+		margin: 0 auto;
+		height: 100%;
+		position: relative;
+	}
+
+	&__info-box {
+		top: calc(50% - 1px);
+		// transform: translate(-0%, -50%);
+		position: relative;
+		color: $white;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		// left: 25%;
+		max-width: 500px;
+		text-align: center;
+
+		h1 {
+		    font-size: 16px;
+		    text-transform: uppercase;
+		    text-align: center;
+		}
+
+		.tagline {
+			font-size: 14px;
+			line-height: 1.8em;
+			padding: 10px 0px;
+			text-align: center;
+		}
+	}
+
+	.logo {
+		display: block;
+		background: url(../assets/img/hr-logo.png) center no-repeat;
+		width: 112px;
+		// min-width: 100%;
+		height: 83px;
+		margin: 0 auto;
+		margin-bottom: 25px;
+		// text-align: left;
+		// top: calc(50% - 1px);
+		// transform: translate(-50%, -50%);
+		// left: 50%;
+		// position: relative;
+	}
+
+    &--index {
+	    display: block;
+	    // position: relative;
+	    top: 70px;
+	    width: 100%;
+
+	    // height: 360px;
+	    height: 400px;
+
+	    // background-color: #87AAFF;
+	    // background-color: #ddcab0;
+	    /* Rectangle 5: */
+
+		background-image: -webkit-linear-gradient(right, #FC6767 0%, #EC008C 100%);
+		background-image: -o-linear-gradient(right, #FC6767 0%, #EC008C 100%);
+		background-image: linear-gradient(to left, #FC6767 0%, #EC008C 100%);
+
+		// background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#ffffff),color-stop(64%,rgba(255,255,255,0.49)),color-stop(100%,rgba(255,255,255,0)));
+		// background-image: -moz-linear-gradient(top,#ffffff 0%,rgba(255,255,255,0.49) 64%,rgba(255,255,255,0) 100%);
+		// background-image: -webkit-linear-gradient(top,#ffffff 0%,rgba(255,255,255,0.49) 64%,rgba(255,255,255,0) 100%);
+		// background-image: linear-gradient(to bottom,#ffffff 0%,rgba(255,255,255,0.49) 64%,rgba(255,255,255,0) 100%);
+    
+	    overflow: hidden;
+	    padding: 0;
+
+	    h1 {
+	    	font-size: 48px;
+	    	font-family: "knewave";
+	    }
+
+		.pathCenter {
+			text-align: center;
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -83,6 +83,9 @@ video {
   font: inherit;
   vertical-align: baseline; }
 
+em {
+  font-style: italic; }
+
 *, :after, :before {
   padding: 0;
   margin: 0;
@@ -118,6 +121,203 @@ table {
   src: url("../src/assets/fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff2") format("woff2"), url("../src/assets/fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
+
+@font-face {
+  font-family: 'knewave';
+  src: url("../src/assets/fonts/knewave/knewave-regular-webfont.woff2") format("woff2"), url("../src/assets/fonts/knewave/knewave-regular-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'glacial_indifferencebold';
+  src: url("../src/assets/fonts/glacial-indifference/glacialindifference-bold-webfont.woff2") format("woff2"), url("../src/assets/fonts/glacial-indifference/glacialindifference-bold-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'glacial_indifferenceregular';
+  src: url("../src/assets/fonts/glacial-indifference/glacialindifference-regular-webfont.woff2") format("woff2"), url("../src/assets/fonts/glacial-indifference/glacialindifference-regular-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'glacial_indifferenceitalic';
+  src: url("../src/assets/fonts/glacial-indifference/glacialindifference-italic-webfont.woff2") format("woff2"), url("../src/assets/fonts/glacial-indifference/glacialindifference-italic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+.hero__wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
+
+.hero__info-box {
+  top: calc(50% - 1px);
+  position: relative;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  max-width: 500px;
+  text-align: center; }
+  .hero__info-box h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center; }
+  .hero__info-box .tagline {
+    font-size: 14px;
+    line-height: 1.8em;
+    padding: 10px 0px;
+    text-align: center; }
+
+.hero .logo {
+  display: block;
+  background: url(../assets/img/hr-logo.png) center no-repeat;
+  width: 112px;
+  height: 83px;
+  margin: 0 auto;
+  margin-bottom: 25px; }
+
+.hero--index {
+  display: block;
+  top: 70px;
+  width: 100%;
+  height: 400px;
+  /* Rectangle 5: */
+  background-image: -webkit-linear-gradient(right, #FC6767 0%, #EC008C 100%);
+  background-image: -o-linear-gradient(right, #FC6767 0%, #EC008C 100%);
+  background-image: linear-gradient(to left, #FC6767 0%, #EC008C 100%);
+  overflow: hidden;
+  padding: 0; }
+  .hero--index h1 {
+    font-size: 48px;
+    font-family: "knewave"; }
+  .hero--index .pathCenter {
+    text-align: center; }
+
+.tabs-block {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 96px;
+  z-index: 1; }
+  .tabs-block--projects {
+    /* this is just an example of element styling to copy */
+    /* Styling Container for Masonry Grid */
+    /* Style the tabs */ }
+    .tabs-block--projects .tabs-block__container {
+      max-width: 1120px;
+      margin: 0 auto;
+      clear: both;
+      /* Style the tab content */ }
+      .tabs-block--projects .tabs-block__container .tabcontent {
+        display: none; }
+    .tabs-block--projects .tabs-block__tab {
+      overflow: hidden; }
+      .tabs-block--projects .tabs-block__tab button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 20px;
+        transition: 0.3s;
+        font-size: 16px; }
+        .tabs-block--projects .tabs-block__tab button:hover {
+          color: #CFCFCF; }
+        .tabs-block--projects .tabs-block__tab button:focus {
+          color: #EC008C; }
+    .tabs-block--projects .portfolioFilter {
+      margin: 60px auto;
+      width: auto;
+      text-align: center; }
+      .tabs-block--projects .portfolioFilter .active {
+        color: #EC008C; }
+
+/* The Masonry Container */
+.masonry {
+  margin: 0 auto;
+  max-width: 100%;
+  -moz-column-gap: 30px;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+/* The Masonry Brick */
+.masonry .item {
+  margin: 0 0 30px 0;
+  color: black; }
+
+.masonry div.item img {
+  width: 100%;
+  vertical-align: bottom;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3; } }
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3; } }
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2; } }
+
+a.bttn {
+  color: #FF0072;
+  text-decoration: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all; }
+  a.bttn:hover {
+    color: #FFF; }
+  a.bttn:focus {
+    color: #FFF; }
+
+.spacer--sm {
+  width: 25px;
+  display: inline-block; }
+
+.bttn {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  font-weight: bold;
+  padding: 5px;
+  border: 3px solid #FF0072;
+  border-radius: 0px;
+  position: relative; }
+  .bttn:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    z-index: -2; }
+  .bttn:hover:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1; }
+  .bttn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1; }
 
 .projects--web .projects__item img {
   max-width: 73%; }
@@ -158,7 +358,7 @@ table {
     .grid__item img {
       display: block; }
   .grid--projects figure:hover figcaption {
-    background: rgba(0, 0, 0, 0.25); }
+    background: rgba(236, 0, 140, 0.75); }
   .grid--projects figure:hover img {
     -webkit-transform: scale3d(1.2, 1.2, 1);
     transform: scale3d(1.2, 1.2, 1); }
@@ -191,7 +391,7 @@ table {
       position: relative;
       top: 20px;
       opacity: 0;
-      color: #2c3e50;
+      color: #fff;
       text-transform: uppercase; }
       .grid--projects figure figcaption div:after {
         position: absolute;
@@ -203,59 +403,13 @@ table {
         margin: auto;
         width: 0%;
         height: 2px;
-        background: #2c3e50; }
+        background: #fff; }
 
 /* Box-sizing reset: http://w3bits.com/?p=3225 */
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-/* The Masonry Container */
-.masonry {
-  margin: 1.5em auto;
-  max-width: 100%;
-  -moz-column-gap: 30px;
-  -webkit-column-gap: 30px;
-  column-gap: 30px;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
-
-/* The Masonry Brick */
-.masonry .item {
-  margin: 0 0 30px 0;
-  color: black; }
-
-.masonry div.item img {
-  width: 100%;
-  vertical-align: bottom;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
-
-/* Masonry on large screens */
-@media only screen and (min-width: 1024px) {
-  .masonry {
-    column-count: 3; } }
-
-/* Masonry on medium-sized screens */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .masonry {
-    column-count: 3; } }
-
-/* Masonry on small screens */
-@media only screen and (max-width: 767px) and (min-width: 540px) {
-  .masonry {
-    column-count: 2; } }
-
 body {
   background: #F7F7F7;
   color: #1c1b20;
-  font-family: "akzidenz-grotesk-reg",sans-serif;
+  font-family: "glacial_indifferenceregular", sans-serif;
   font-size: 12px;
   line-height: 1.8;
   letter-spacing: .1em;
@@ -303,100 +457,5 @@ body {
     .bg-global__line:nth-of-type(6) {
       left: 100%; }
 
-.main-content {
-  margin: auto;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto; }
-
 .responsive-image {
   max-width: 100%; }
-
-header.header-desktop {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1500;
-  padding: 52px 23px 20px;
-  transition: background-color .3s,padding .3s;
-  padding: 20px;
-  font-family: "akzidenz-grotesk-reg",sans-serif;
-  font-weight: normal;
-  /*	display: none;*/
-  /*	border-bottom: 1px solid #000;*/ }
-
-.sticky {
-  display: block !important; }
-
-.header-desktop .nav-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: relative; }
-
-.nav-wrapper {
-  max-width: 1315px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: auto; }
-
-.logo {
-  width: 108px;
-  height: 21px;
-  top: calc(50% - 1px);
-  transform: translate(-50%, -50%);
-  left: 50%;
-  background: url(../assets/img/logo.svg) center no-repeat;
-  background-size: 108px 19px;
-  line-height: 0;
-  text-indent: -4004px;
-  position: absolute;
-  transition: opacity .3s,visibility .3s;
-  opacity: 1;
-  visibility: visible;
-  transition-delay: .2s; }
-
-.nav, .nav a, .nav li {
-  display: inline-block; }
-
-.nav {
-  text-transform: uppercase;
-  color: #1c1b20; }
-
-.nav ul {
-  margin-bottom: 0px !important; }
-
-.nav .menu > li {
-  padding: 6px 0;
-  position: relative; }
-
-.nav li:first-child {
-  margin-left: 0; }
-
-.nav li {
-  margin: 0 8px;
-  font-size: 10px; }
-
-.nav a {
-  text-decoration: none;
-  position: relative;
-  color: #1c1b20; }
-
-@media (min-width: 480px) {
-  .nav a:before {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 0;
-    height: 1px;
-    background: #1c1b20;
-    transition: width .4s; } }
-
-@media (min-width: 480px) {
-  .nav li:hover > a:before {
-    width: 100%; } }

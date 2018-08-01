@@ -18,15 +18,9 @@
 
 <body>
 	<div class="main-content">
-		<div class="bg-global">
-			<div class="bg-global__line"></div>
-			<div class="bg-global__line"></div>
-			<div class="bg-global__line"></div>
-			<div class="bg-global__line"></div>
-			<div class="bg-global__line"></div>
-			<div class="bg-global__line"></div>
-		</div>
-		<header id="header-fixed" class="header-desktop">
+		<div class="main-content__container">
+
+<!-- 		<header id="header-fixed" class="header-desktop">
 			<div class="nav-wrapper">
 				<nav class="nav">
 					<ul id="left-menu" class="menu">
@@ -43,10 +37,135 @@
 							<li id="menu-item-5" class="menu-item menu-item-object-page menu-item-5"><a href="#">Contact</a></li>
 						</ul>
 					</nav>	
-				</div><!-- /.header__aside -->
-			</div><!-- /.shell -->
-		</header><!-- /.header -->
+				</div>
+			</div>
+		</header> --><!-- end header-fixed -->
+
+		<section class="hero hero--index">
+			<div class="hero__wrapper">
+				<div class="hero__info-box">
+					<a href="#" class="logo"></a>
+<!-- 					<h1 class="myname">Haley Ressl</h1> -->
+<!-- 					<h2>
+					Welcome to my portfolio.
+					</h1> -->
+					<p class="tagline">
+						I am a product designer focused on creating experiences and concepts that empower people and solve real-world problems.
+					</p>
+<!-- 					<p class="tagline">
+						I’m a product designer focused on creating experiences and concepts that empower people through education, fun and wellness.
+					</p> -->
+					<p class="tagline">
+						I value simplicity with a bit of <em>oomph</em>.
+					</p>
+					<a href="mailto:haleyressl@gmail.com" target="_blank">
+						<img src="/assets/img/contact/envelope.svg" style="margin-top: -1px">
+						<!-- Drop me a line -->
+					</a>
+					<a href="https://www.linkedin.com/in/haleyressl" target="_blank">
+						<img src="/assets/img/contact/linkedin.svg">
+						<!-- Link up -->
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="tabs-block tabs-block--projects">
+			<div class="tabs-block__container">
+				<div class="tabs-block__tab portfolioFilter">
+
+					<a href="#0" class="bttn">Web &amp; UI Projects</a>
+					<span class="spacer--sm"></span>
+					<a href="#0" class="bttn">Industrial Designs</a><br>
+
+					<button id="defaultOpen" class="tablinks" onclick="openProjects(event, 'webuiProjects')">Web &amp; UI Projects</button>
+					<button class="tablinks" onclick="openProjects(event, 'idProjects')">Industrial Designs</button>
+				</div>
+				<div id="webuiProjects" class="tabcontent">
+		          <div class="masonry">
+		            <div class="item"><img src="/assets/img/web-projects/ua-engineering-thumb-2.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/sfu-website-banners-thumb.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/personal-redesign-thumb.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/fb-social-images-thumb.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/ua-engineering-thumb-2.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/lynn-site-banners-thumb.jpg"></div>
+		          </div>
+				</div>
+				<div id="idProjects" class="tabcontent">
+		          <div class="masonry">
+		            <div class="item"><img src="/assets/img/web-projects/ffc-thumb.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/sfu-website-banners-thumb.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/personal-redesign-thumb.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/fb-social-images-thumb.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/ua-engineering-thumb-2.jpg"></div>
+		            <div class="item"><img src="/assets/img/web-projects/lynn-site-banners-thumb.jpg"></div>
+		          </div>
+				</div>
+			</div>
+		</section>
+
+<!-- 		<section class="grid grid--projects">
+            <figure class="grid__item">
+              <img class="responsive-image" src="/assets/img/web-projects/sfu-website-banners-thumb.jpg" alt="Thumb" />
+              <figcaption class="caption">
+                <div><p>Thumbnail Caption</p></div>
+              </figcaption>
+            </figure>
+            <figure class="grid__item">
+              <img class="responsive-image" src="http://placehold.it/300x300" alt="Thumb" />
+              <figcaption class="caption">
+                <div><p>Thumbnail Caption</p></div>
+              </figcaption>
+            </figure>
+            <figure class="grid__item">
+              <img class="responsive-image" src="http://placehold.it/300x300" alt="Thumb" />
+              <figcaption class="caption">
+                <div><p>Thumbnail Caption</p></div>
+              </figcaption>
+            </figure>
+            <figure class="grid__item">
+              <img class="responsive-image" src="http://placehold.it/300x300" alt="Thumb" />
+              <figcaption class="caption">
+                <div><p>Thumbnail Caption</p></div>
+              </figcaption>
+            </figure>
+            <figure class="grid__item">
+              <img class="responsive-image" src="http://placehold.it/300x300" alt="Thumb" />
+              <figcaption class="caption">
+                <div><p>Thumbnail Caption</p></div>
+              </figcaption>
+            </figure>
+            <figure class="grid__item">
+              <img class="responsive-image" src="http://placehold.it/300x300" alt="Thumb" />
+              <figcaption class="caption">
+                <div><p>Thumbnail Caption</p></div>
+              </figcaption>
+            </figure>
+          </section> -->
+
+		</div><!-- /.main-content__container -->
 	</div><!-- /.main-content -->
+
+	<script>
+		// Get the element with id="defaultOpen" and have it open on page load
+		document.getElementById("defaultOpen").click();
+
+		// Open tab on click
+		function openProjects(evt, tabName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(tabName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+	</script>
+
 </body>
 
 </html>

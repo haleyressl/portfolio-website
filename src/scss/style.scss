@@ -1,6 +1,7 @@
 @import "reset";
 @import "variables";
 @import "fonts";
+@import "hamburger-nav";
 @import "hero";
 @import "home-tabs";
 @import "project-grid";
@@ -98,6 +99,11 @@ body {
 
 .responsive-image {
   max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
 }
 
 

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="298" height="58" viewBox="0 0 298 58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+        fill: #fff;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-1" width="298" height="58"/>
+  <text id="HALEY_RESSL" data-name="HALEY RESSL" class="cls-2" x="34.089" y="22">HALEY RESSL</text>
+</svg>

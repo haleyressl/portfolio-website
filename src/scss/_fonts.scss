@@ -1,56 +1,114 @@
-// Define your fonts here. Make sure font families are linked.
-
 $helvetica : Helvetica, Arial, sans-serif;
+$bagnard: 'bagnard', serif;
+$copernicus: 'copernicus', serif;
+$galano: 'galano', sans-serif;
+$galanoBold: 'galanoBold', sans-serif;
+$heeboLight: 'heeboLight', sans-serif;
+$heeboReg: 'heeboReg', sans-serif;
+$heeboMed: 'heeboMed', sans-serif;
+$heeboBold: 'heeboBold', sans-serif;
+$heeboBlack: 'heeboBlack', sans-serif;
+$romanaBold: 'romanaBold', serif;
+$acta: 'acta', serif;
+$sofiaMed: 'sofiaMed', sans-serif;
+$superDisplayBold: 'superDisplayBold', serif;
+$superDisplayLight: 'superDisplayLight', serif;
+
+// Define your fonts here. Make sure font families are linked.
 
 // Use these more generic aliases in case the font gets changed.
 $body: $helvetica;
 $display: $helvetica;
 
-// Generated Fonts
+
 @font-face {
-  font-family: 'akzidenz-grotesk-reg';
-  src: url('../src/assets/fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff2') format('woff2'),
-       url('../src/assets/fonts/akzidenz_grotesk_regular/berthold_akzidenz_grotesk_be_regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'bagnard';
+    src: url('../assets/fonts/bagnard-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'akzidenz-grotesk-light';
-  src: url('../src/assets/fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff2') format('woff2'),
-    url('../src/assets/fonts/akzidenz_grotesk_light/AkzidenzGroteskBE-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'copernicus';
+    src: url('../assets/fonts/copernicus/copernicus-book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'knewave';
-  src: url('../src/assets/fonts/knewave/knewave-regular-webfont.woff2') format('woff2'),
-    url('../src/assets/fonts/knewave/knewave-regular-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'galano';
+    src: url('../assets/fonts/galano-regular/galanogrotesque-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'glacial_indifferencebold';
-  src: url('../src/assets/fonts/glacial-indifference/glacialindifference-bold-webfont.woff2') format('woff2'),
-    url('../src/assets/fonts/glacial-indifference/glacialindifference-bold-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'galanoBold';
+    src: url('../assets/fonts/galano-regular/galano-grotesque-extrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'glacial_indifferenceregular';
-  src: url('../src/assets/fonts/glacial-indifference/glacialindifference-regular-webfont.woff2') format('woff2'),
-    url('../src/assets/fonts/glacial-indifference/glacialindifference-regular-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'heeboReg';
+    src: url('../assets/fonts/heebo/Heebo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'glacial_indifferenceitalic';
-  src: url('../src/assets/fonts/glacial-indifference/glacialindifference-italic-webfont.woff2') format('woff2'),
-    url('../src/assets/fonts/glacial-indifference/glacialindifference-italic-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'heeboMed';
+    src: url('../assets/fonts/heebo/Heebo-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'heeboBold';
+    src: url('../assets/fonts/heebo/Heebo-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'heeboBlack';
+    src: url('../assets/fonts/heebo/Heebo-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'heeboLight';
+    src: url('../assets/fonts/heebo/Heebo-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'romanaBold';
+    src: url('../assets/fonts/romana/RomanaBT-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acta';
+    src: url('../assets/fonts/acta/571d421.otf') format('opentype');
+    // font-weight: normal;
+    // font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofiaMed';
+    src: url('../assets/fonts/sofia/Sofia Pro Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'superDisplayBold';
+    src: url('../assets/fonts/super-display/GT-Super-Display-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'superDisplayLight';
+    src: url('../assets/fonts/super-display/GT-Super-Display-Light.woff2') format('woff2');
 }

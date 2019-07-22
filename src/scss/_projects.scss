@@ -1,0 +1,121 @@
+.projects {
+
+	$self: &;
+
+	&--fake-dropdown {
+
+		display: block;
+		position: relative;
+		width: 100%;
+		max-width: 1120px;
+		margin: -50px auto 100px auto;
+		font-size: 22px;
+		height: 114px; // this prevents grid from moving up and down when the uls disappear
+
+		input[type="radio" i] {
+		  visibility: hidden;
+		}
+
+		#{$self}__select-area {
+
+			font-size: 22px;
+
+			p.tagline {
+				display: inline-block;
+				margin-right: 2px;
+			}
+
+			#select-op-btn {
+			  // color: $laguna-blue;
+			  font-weight: 500;
+			  // border-bottom: 2px dashed $laguna-blue;
+			  padding-bottom: 5px;
+			  cursor: pointer;
+			}
+
+			ul#options {
+
+			  list-style-type: none;
+			  margin-top: 40px;
+
+				li {
+
+					display: inline-block;
+					margin-right: 50px;
+					font-size: 14px;
+
+					label {
+						cursor: pointer;
+					}
+
+				}
+			  
+			}
+
+		}
+
+		.js-drop {
+		  display: none;
+		}
+
+		.active {
+		  font-weight: 500;
+		}
+	}
+
+	&--grid {
+
+		width: 100%;
+		max-width: 1120px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		margin-top: -20px;
+
+		#{$self}__bricks {
+
+			-moz-column-gap: 2em;
+			-webkit-column-gap: 2em;
+			column-gap: 2em;
+
+			-moz-column-fill: initial;
+			-webkit-column-fill: initial;
+			column-fill: initial;
+
+			margin-top: 75px;
+
+			.brick {
+
+				margin-bottom: 2em;
+
+				img {
+					width: 100%;
+					vertical-align: bottom;
+				}
+			}
+
+			@media only screen and (max-width: 1023px) {
+				padding: 0 1.5em;
+			}
+
+			@media only screen and (max-width: 767px) and (min-width: 540px) {
+				-moz-column-count: 2;
+				-webkit-column-count: 2;
+				column-count: 2;
+			}
+
+			@media only screen and (max-width: 1023px) and (min-width: 768px) {
+				-moz-column-count: 3;
+				-webkit-column-count: 3;
+				column-count: 3;
+			}
+
+			@media only screen and (min-width: 1024px) {
+				-moz-column-count: 3;
+				-webkit-column-count: 3;
+				column-count: 3;
+			}
+		}
+	}
+}
+
+

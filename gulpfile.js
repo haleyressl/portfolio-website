@@ -10,7 +10,6 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-
 // Watch Sass & Serve
 gulp.task('serve', ['sass'], function() {
     browserSync.init({

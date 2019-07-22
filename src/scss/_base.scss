@@ -1,0 +1,208 @@
+
+/* ----------- padding ------------- */
+
+.pd-top-25 { padding-top: 2.5rem; }  /* 25px */
+.pd-bottom-25 { padding-bottom: 2.5rem; }
+.pd-top-50 { padding-top: 5rem; } /* 50px */
+.pd-bottom-50 { padding-bottom: 5rem; }
+.pd-top-75 { padding-top: 7.5rem; } /* 75px */
+.pd-bottom-75 { padding-bottom: 7.5rem; }
+.pd-top-100 { padding-top: 10rem; } /* 100px */
+.pd-bottom-100 { padding-bottom: 10rem; }
+.pd-top-125 { padding-top: 12.5rem; } /* 125px */
+.pd-bottom-125 { padding-bottom: 12.5rem; }
+.pd-top-150 { padding-top: 15rem; } /* 150px */
+.pd-bottom-150 { padding-bottom: 15rem; }
+.pd-top-175 { padding-top: 17.5rem; } /* 150px */
+.pd-bottom-175 { padding-bottom: 17.5rem; }
+.pd-top-200 { padding-top: 20rem; } /* 200px */
+.pd-bottom-200 { padding-bottom: 20rem; }
+.pd-top-225 { padding-top: 22.5rem; }
+.pd-bottom-225 { padding-bottom: 22.5rem; }
+.pd-top-250 { padding-top: 25rem; }
+.pd-bottom-250 { padding-bottom: 25rem; }
+
+/* ------------ colors ------------ */
+
+.color--white { color: $white; }
+.color--black { color: $black; }
+.color--black2 { color: $black2; }
+.color--black3 { color: $black3; }
+.color--black4 { color: $black4; }
+.color--red { color: $red; }
+.color--grey { color: $grey; }
+.color--grey2 { color: $grey2; }
+.color--grey3 { color: $grey3; }
+.color--slate { color: $slate; }
+.color--see { color: #cccccc; }
+.color--peaches { color: $peaches; }
+
+.bg--white { background-color: $white; }
+.bg--zero { background-color: $zero; }
+.bg--black { background-color: $black; }
+.bg--black2 { background-color: $black2; }
+.bg--dark { background-color: $black4; }
+.bg--darkgrey { background-color: $darkgrey; }
+.bg--grey { background-color: $grey; }
+.bg--tanned { background-color: $tanned; }
+.bg--beige { background-color: $beige; }
+.bg--slate { background-color: $slate; }
+.bg--smoke { background-color: $smoke; }
+.bg--fate { background-color: $fate; }
+.bg--pinkdawn { background-color: $pinkdawn; }
+.bg--blah { background-color: $blah; }
+.bg--lightbeige { background-color: $lightbeige; }
+.bg--peaches { background-color: $peaches; }
+
+/* ---------- typography ----------- */
+
+a:active, a:hover, a:focus { outline: 0; }
+
+.align--center { text-align: center; }
+.align--left { text-align: left; }
+.align--right { text-align: right; }
+
+h3, h4, h5, h6 {
+
+	font-family: $heeboReg;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100%;
+    text-shadow: none;
+}
+
+h1 {
+
+	font-family: $superDisplayBold;
+	// font-size: 63px;
+	// letter-spacing: 0.02rem;
+	// line-height: 73px;
+	letter-spacing: 0.02rem;
+	font-size: 6rem;
+	line-height: 1.2;
+	text-shadow: none;
+
+	@media screen and (max-width: 767px) {
+
+		font-size: 3.6rem;
+		line-height: 1.4;
+
+	}
+	
+}
+
+h2 {
+
+	font-family: $superDisplayBold;
+	letter-spacing: 0.02rem;
+    font-size: 6rem;
+    line-height: 1.125;
+	text-shadow: none;
+
+	@media screen and (max-width: 767px) {
+
+		font-size: 3rem;
+		line-height: 1.4;
+
+	}
+
+}
+
+h3 {
+
+	font-family: $heeboMed;
+	font-size: 1.5rem;
+	line-height: 1;
+	margin-bottom: 2.5rem;
+	opacity: 0.6;
+
+	// font-family: $superDisplayBold;
+
+	@media screen and (max-width: 767px) {
+		line-height: 2;
+	}
+
+}
+
+.noisy {
+
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-image: url("/assets/img/utility/textures/noisey-as-fuckkkk.gif");
+	-webkit-text-stroke: none;
+	display: inline-block;
+
+	$self: &;
+
+	&--black { color: rgba(23,23,23,0.8); }
+
+	&--white { color: rgba(255,255,255,0.9); }
+
+	&--peaches { color: rgba(247,240,233,0.9); }
+
+}
+
+.outlined {
+
+	$self: &;
+
+	color: transparent;
+	display: inline-block;
+	padding-left: 0.8rem;
+
+	&--black {
+
+		-webkit-text-stroke: 1px $black2;
+	    -webkit-text-stroke-width: 1px;
+	    -webkit-text-stroke-color: rgb(31, 31, 31);
+
+	}
+
+	&--white {
+
+		-webkit-text-stroke: 1px $white;
+	    -webkit-text-stroke-width: 1px;
+	    -webkit-text-stroke-color: rgb(255, 255, 255);
+
+	}
+
+	&--peaches {
+
+		-webkit-text-stroke: 1px $peaches;
+	    -webkit-text-stroke-width: 1px;
+	    -webkit-text-stroke-color: rgb(247, 240, 233);
+
+	}
+
+}
+
+p {
+
+	// font-size: 1.7rem;
+	// line-height: 1.7142857143;
+	font-size: 1.6rem;
+	line-height: 1.8;
+
+}
+
+.paragraph--secondary {
+	padding-top: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

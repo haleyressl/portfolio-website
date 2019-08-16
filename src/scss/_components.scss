@@ -1,4 +1,39 @@
 
+/* ----- scroll to top arrow ------ */
+
+#scroll {
+        cursor:pointer;
+}
+.to-the-top {
+    position: fixed;
+    right: 3rem;
+    bottom: 2.5rem;
+    z-index: 2000;
+    display: none;
+}
+
+.to-the-top a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.to-the-top a:hover {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15); 
+    transition: all .2s linear;
+}
+
+.to-the-top a svg {
+    fill: $hellbound;
+    // opacity: 0.7;
+
+    @media screen and (max-width) {
+        width: 4rem;
+    }
+}
+
 /* ----------- buttons ------------ */
 
 .btn {
@@ -139,7 +174,6 @@
 
     &--none2underline {
 
-        font-family: $galanoBold;
         font-size: 1.2rem;
         font-style: normal;
         border: 2px solid transparent;
@@ -211,12 +245,12 @@
 
             &:nth-of-type(1),
             &:nth-of-type(2) {
-                margin-top: 1.6rem;
+                margin-top: -1rem;
             }
 
             &:nth-of-type(2),
             &:nth-of-type(4) {
-                padding-left: 6rem;
+                padding-left: 5rem;
             }
 
             p {
@@ -230,8 +264,8 @@
 
                 display: block;
                 font-family: $superDisplayBold;
-                color: $peaches;
-                border: 1px solid #f7f0e9;
+                color: $hellbound;
+                border: 1px solid $hellbound;
                 -moz-border-radius: 20px;
                 border-radius: 20px;
                 width: 40px;

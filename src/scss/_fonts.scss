@@ -1,53 +1,21 @@
 $helvetica : Helvetica, Arial, sans-serif;
-$bagnard: 'bagnard', serif;
-$copernicus: 'copernicus', serif;
-$galano: 'galano', sans-serif;
-$galanoBold: 'galanoBold', sans-serif;
+$heeboThin: 'heeboThin', sans-serif;
 $heeboLight: 'heeboLight', sans-serif;
 $heeboReg: 'heeboReg', sans-serif;
 $heeboMed: 'heeboMed', sans-serif;
 $heeboBold: 'heeboBold', sans-serif;
 $heeboBlack: 'heeboBlack', sans-serif;
-$romanaBold: 'romanaBold', serif;
-$acta: 'acta', serif;
-$sofiaMed: 'sofiaMed', sans-serif;
 $superDisplayBold: 'superDisplayBold', serif;
 $superDisplayLight: 'superDisplayLight', serif;
+$gilroyBold: 'gilroyBold',sans-serif;
+$gilroyMed: 'gilroyMed',sans-serif;
+$sectra: 'sectra', serif;
 
 // Define your fonts here. Make sure font families are linked.
 
 // Use these more generic aliases in case the font gets changed.
 $body: $helvetica;
 $display: $helvetica;
-
-
-@font-face {
-    font-family: 'bagnard';
-    src: url('../assets/fonts/bagnard-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'copernicus';
-    src: url('../assets/fonts/copernicus/copernicus-book.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'galano';
-    src: url('../assets/fonts/galano-regular/galanogrotesque-regular-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'galanoBold';
-    src: url('../assets/fonts/galano-regular/galano-grotesque-extrabold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'heeboReg';
@@ -85,22 +53,10 @@ $display: $helvetica;
 }
 
 @font-face {
-    font-family: 'romanaBold';
-    src: url('../assets/fonts/romana/RomanaBT-Bold.otf') format('opentype');
+    font-family: 'heeboThin';
+    src: url('../assets/fonts/heebo/Heebo-Thin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'acta';
-    src: url('../assets/fonts/acta/571d421.otf') format('opentype');
-    // font-weight: normal;
-    // font-style: normal;
-}
-
-@font-face {
-    font-family: 'sofiaMed';
-    src: url('../assets/fonts/sofia/Sofia Pro Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -112,3 +68,22 @@ $display: $helvetica;
     font-family: 'superDisplayLight';
     src: url('../assets/fonts/super-display/GT-Super-Display-Light.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'gilroyBold';
+    src: url('../assets/fonts/gilroy/Gilroy-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'gilroyMed';
+    src: url('../assets/fonts/gilroy/Gilroy-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'sectra';
+    src: url('../assets/fonts/sectra/GTSectraDisplay-Medium.woff2') format('woff2');
+}
+
+
+
+

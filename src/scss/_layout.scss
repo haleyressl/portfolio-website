@@ -39,20 +39,20 @@
 		overflow-x: hidden;
 		width: 100%;
 
-		// &:after {
+		&:after {
 
-		// 	position: fixed;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	content: "";
-		// 	background-image: url("/assets/img/utility/textures/noisey-as-fuckkkk.gif");
-		// 	opacity: 0.05;
-		// 	z-index: 10;
-		// 	pointer-events: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			content: "";
+			background-image: url("/assets/img/utility/textures/noisey-as-fuckkkk.gif");
+			opacity: 0.04;
+			z-index: 10;
+			pointer-events: none;
 
-		// }
+		}
 
 	}
 
@@ -74,23 +74,48 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
 
-    &--case-header {
+    &--case-title {
+
+		display: block;
+		position: relative;
+		// padding-top: 230px;
+		// padding-bottom: 230px;
+
+		.big-ass-number {
+
+			// position: absolute;
+
+			// left: 10%;
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+			// margin-bottom: -20rem;
+			font-size: 20rem;
+			line-height: 1;
+			color: rgba(0, 0, 0, 0.05);
+			font-family: $superDisplayBold;
+		    // position: absolute;
+		    // margin-left: -230px;
+		    // top: 155px;
+		    // font-size: 400px;
+		    // line-height: 400px;
+		    // color: rgba(0, 0, 0, 0.05);
+		    // font-family: $superDisplayBold;
 
 
-		// &:after {
 
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	content: "";
-		// 	background-image: url("/assets/img/utility/textures/noisey-as-fuckkkk.gif");
-		// 	opacity: 0.05;
-		// 	z-index: 10;
-		// 	pointer-events: none;
+		    display: none;
+		}
 
-		// }
+		.complementary-infos {
+		    position: absolute;
+		    width: 280px;
+		    margin: 0 10px;
+		    float: left;
+		    margin-left: 790px;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
 
     }
 
@@ -100,61 +125,35 @@
 
     &--case-hero-image {
 
-		position: relative;
-		height: 400px;
-		width: 100%;
-		display: block;
-		overflow: hidden;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-		background-size: cover;
-    	z-index: 100;
-
-		&:before {
-
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			display: block;
+  		img {
 			width: 100%;
-			height: 100%;
-			background-color: rgba(0,0,0,0.5);
+	  		max-width: 1180px;
+			margin: 0 auto;
+  		}
 
-    	}
+  //   	@media screen and (min-width: 47.99em) {
+  //   		height: 500px;
+  //   	}
 
-		&:after {
+		// @media screen and (min-width: 50.9275em) {
+		// 	height: 695px;
+		// }
 
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			content: "";
-			background-image: url("/assets/img/utility/textures/noisey-as-fuckkkk.gif");
-			opacity: 0.04;
-			z-index: 10;
-			pointer-events: none;
-
-		}
-
-    	@media screen and (min-width: 47.99em) {
-    		height: 500px;
-    	}
-
-		@media screen and (min-width: 50.9275em) {
-			height: 695px;
-		}
-
-		@media screen and (min-width: 91.24em) {
-			height: 840px;
-		}
+		// @media screen and (min-width: 91.24em) {
+		// 	height: 840px;
+		// }
 
 	}
 
     &--case-simple-text {
 
 		h3 {
+
+			span {
+				margin-left: 0;
+				margin-right: 12px;
+			}
+
 			@media screen and (max-width: 767px) {
 				margin-bottom: 2.5rem;
 			}
@@ -163,6 +162,18 @@
     }
 
     &--case-media {
+
+    	img {
+
+			position: relative;
+			max-width: 100%;
+			z-index: 200;
+
+    	}
+
+    }
+
+    &--slate-before {
 
     	&:before {
 
@@ -173,14 +184,41 @@
 			width: 100%;
 			z-index: 0;
 			content: "";
-			background-color: $hellbound;
+			background-color: $slate;
 
     	}
 
-    	img {
+    }
 
-			position: relative;
-			max-width: 100%;
+    &--slate-after {
+
+    	&:after {
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 125px;
+			width: 100%;
+			z-index: 0;
+			content: "";
+			background-color: $slate;
+
+    	}
+
+    }
+
+    &--whitesmoke-after {
+
+    	&:after {
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 125px;
+			width: 100%;
+			z-index: 0;
+			content: "";
+			background-color: $whitesmoke;
 
     	}
 
@@ -198,7 +236,8 @@
 		}
 
 		&--1200 {
-			max-width: 1200px;
+			// max-width: 1200px;
+			max-width: 1180px;
 		}
 
 		#{$self}--case-media & {
@@ -278,17 +317,19 @@
 
 			max-width: 580px;
 			margin-left: auto;
-			padding-top: 16rem;
+			padding-top: 230px;
 
 	    }
 
 	    &--case-metas {
 
-			margin-top: 10rem;
-			margin-bottom: 6rem;
 			display: -webkit-flex;
 			display: -ms-flexbox;
 			display: flex;
+
+			h3 span {
+				margin-left: 0px;
+			}
 
 			.case-client {
 
@@ -302,6 +343,19 @@
 
 				width: 100%;
 				max-width: 580px;
+
+				display: flex;
+				max-width: 100%;
+				margin: 0 auto;
+				justify-content: center;
+
+    			h3 {
+
+					margin: 7.5rem 3rem 0rem 3rem;
+					font-size: 1rem;
+					letter-spacing: 0.28rem;
+
+    			}
 
 				@media screen and (max-width: 767px) {
 					h3 {
@@ -376,9 +430,11 @@
     &--images-end-aligned {
 
     	.row {
-    		@media screen and (min-width: 480px) {
-    			min-height: 1270px;
-    		}
+    		justify-content: center;
+    		align-items: flex-end;
+    		// @media screen and (min-width: 480px) {
+    		// 	min-height: 1200px;
+    		// }
     	}
 
     	h3 { 
@@ -390,7 +446,8 @@
 		img {
 
 			height: 100%;
-			width: 48%;
+		    width: 100%;
+		    max-width: 46%;
 			position: relative;
 			z-index: 100;
 
@@ -402,18 +459,23 @@
 
 		.left {
 
-			align-self: flex-start;
+			// align-self: flex-start;
+			// margin-right: 0.2rem;
+			margin-bottom: 15rem;
+			// margin-right: 2%;
 
 			@media screen and (max-width: 480px) {
-				margin-bottom: 2.5rem;
+				margin-bottom: 3rem;
 			}
 
 		}
 
 		.right {
 
-			align-self: flex-end;
+			margin-top: 15rem;
 			margin-left: auto;
+			// align-self: flex-end;
+			// margin-left: auto;
 
 		}
 

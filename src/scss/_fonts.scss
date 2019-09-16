@@ -10,6 +10,8 @@ $superDisplayLight: 'superDisplayLight', serif;
 $gilroyBold: 'gilroyBold',sans-serif;
 $gilroyMed: 'gilroyMed',sans-serif;
 $sectra: 'sectra', serif;
+$canelaLight: 'canelaLight', serif;
+$canelaReg: 'canelaReg', serif;
 
 // Define your fonts here. Make sure font families are linked.
 
@@ -82,6 +84,16 @@ $display: $helvetica;
 @font-face {
     font-family: 'sectra';
     src: url('../assets/fonts/sectra/GTSectraDisplay-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'canelaLight';
+    src: url('../assets/fonts/canela/Canela-Light-Web.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'canelaReg';
+    src: url('../assets/fonts/canela/Canela-Reg-Web.woff2') format('woff2');
 }
 
 
